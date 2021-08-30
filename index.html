@@ -7,6 +7,7 @@
 <style>
     :root{
         --color1:#d89584;
+        --color2: rgb(	244, 244, 244);
     }
 
     body{
@@ -16,7 +17,6 @@
         background:url(cover_overlay.png)  no-repeat center/100% 100% ,url(dark_python_wallpaper.jpg) no-repeat center/cover;
         height: 360px;
         position: relative;
-
     }
     img.cover-profile{
         height: 100px;
@@ -84,41 +84,70 @@
         margin-top: 20px;
         display: inline-block;
         background-color: rgba(0, 0, 0, 0.7);
+        /* if we want to add round shape
         border-radius: 25px;
+        */
         font-size: 14px;
-
+        /* I added margin bottom od 40px*/
+        margin-bottom: 40px;
     }
 
     a.contact-button:hover{
         color: white;
         border: 3px solid white;
     }
+    div.section{
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 30px;
+        padding-bottom: 30px;
 
+    }
+    div.gray-section-1{
+        background: url(triangle2white.svg) no-repeat center bottom/100%;
+        background-color: var(--color2);
+        padding-bottom: 100px;
+    }
+    div.gray-section-2{
+        background: url(triangle1white.svg) no-repeat center top/100%;
+        background-color: var(--color2);
+        padding-top: 100px;
+    }
 
 </style>
 
 </head>
 <body>
+    <!--COVER-->
 <div class="cover">
     <img class="cover-profile" src="profile_yoni-modified.png" style="width:6.3em; height: 6.3em;"  />
     <h1>Yoni Ifrah</h1>
     <p>Software Engineer Student</p>
     <div style="text-align: center;">
-        <a class=contact-button href="https://wa.me/972525639295" target="_blank">Whatsapp me</a>
+        <a class=contact-button href="mailto:yonifrah996@gmail.com?subject=Reached%20From%20Personal%20Website"> Email me</a>
     </div>
 
     <div class="cover-contact">
-        <a href="mailto:yonifrah996@gmail.com?subject=Reached%20From%20Personal%20Website"> Email me</a>
+        <a href="https://wa.me/972525639295" target="_blank">Whatsapp me</a>
         <a href="tel:+972525639295"> Call me</a>
     </div>
-
     <!--
-
         <div class=button>
             <button type="button" onclick="alert('Hello world!')">CONTACT ME</button>
         </div>
     -->
-
+    <!-- GRAY  1 -->
+    <div class="section gray-section-1">
+        About Me
+    </div>
+    <!-- WHITE -->
+    <div class="section">
+        Desctiptions stuff
+    </div>
+    <!-- GRAY  2 -->
+    <div class="section gray-section-2">
+        Desctiptions stuff
+    </div>
 </div>
 </body>
 </html>
