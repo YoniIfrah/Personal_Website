@@ -47,6 +47,8 @@ div.cover-contact a {
     margin-top: 0px;
     color: white;
     font-size: 14px;
+    font-size: 3vw;
+
 }
 div.cover-contact a:first-child {
  margin-bottom: 15px;   
