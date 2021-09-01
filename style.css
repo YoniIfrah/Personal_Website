@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+
+
 :root{
     --color1:#d89584;
     --color2: rgb(	244, 244, 244);
@@ -8,7 +13,7 @@ body{
     line-height: 1.5;
 }
 div.cover{
-    background:url(cover_overlay.png)  no-repeat center/100% 100% ,url(dark_python_wallpaper.jpg) no-repeat center/cover;
+    background:url(cover_overlay2.png)  no-repeat center/100% 100% ,url(dark_python_wallpaper.jpg) no-repeat center/cover;
     height: 360px;
     position: relative;
 }
@@ -19,6 +24,8 @@ img.cover-profile{
     margin-left: -50px;
     margin-top: 50px;
     image-rendering: pixelated;
+    border-radius: 50%;
+    border: 3px solid var(--color1);
 }
 h1{
     color: white;
@@ -30,26 +37,24 @@ h1{
 div.cover p {
     color: lightgray;
     text-align: center;
-    font-family:Monospace;
+    font-family:Georgia, serif;
     font-size: 14px;
     margin-top: 8px;
 }
+/*
 div.cover-contact{
-    /*background-color: lightgreen;*/
+    background-color: lightgreen;
     position:absolute;
     top: 20px;
     left: 10px;
     border-left: 4px solid var(--color1);
     padding-left: 8px;
-}
+}*/
 div.cover-contact a {
     display: block;
     margin-top: 0px;
     color: white;
-    font-size: 14px;
-    max-block-size: 14px;
-    min-width: 3px;
-
+    font-size: 14px;    
 }
 div.cover-contact a:first-child {
  margin-bottom: 15px;   
@@ -89,6 +94,7 @@ a.contact-button{
     margin-bottom: 20px;
 }
 
+
 a.contact-button:hover{
     color: white;
     border: 3px solid white;
@@ -98,7 +104,7 @@ div.section{
     padding-right: 40px;
     padding-top: 30px;
     padding-bottom: 30px;
-
+    
 }
 div.gray-section-1{
     background: url(triangle2white.svg) no-repeat center bottom/100%;
@@ -114,7 +120,7 @@ h2{
     text-align: center;
     margin-top: 0;
     font-size: 34px ;
-    font-family:Monospace;
+    font-family:Georgia, serif;
 }
 div.seperator{
     height: 1px;
@@ -133,3 +139,20 @@ div.gray-section-1 p {
     margin-left: auto;
     margin-right: auto;
 }
+div.section p{
+   color: black;
+   
+}
+.col40{
+    width: 40%;
+}
+.col60{
+    width: 60%;
+}
+.float-right{
+    float: right;
+}
+.col-portfolio{
+    width: 47%;
+}
+
